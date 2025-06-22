@@ -1,0 +1,7 @@
+flask
+langchain
+langchain-community
+openai    # or groq llama 3 client
+amadeus
+python-dotenv
+

@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head><title>Flight Agent</title></head>
+<body>
+  <h1>Bismillah Flight Agent</h1>
+  <input id="q" placeholder="Search flights..." style="width:300px">
+  <button onclick="ask()">Ask</button>
+  <pre id="resp"></pre>
+
+  <script>
+  async function ask() {
+    const q = document.getElementById("q").value;
+    const res = await fetch("/api/query", {
+      method:"POST", headers:{"Content-Type":"application/json"},
+      body: JSON.stringify({query: q})
+    });
+    const data = await res.json();
+    document.getElementById("resp").innerText = data.response;
+  }
+  </script>
+</body>
+</html>
+

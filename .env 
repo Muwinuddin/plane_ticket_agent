@@ -1,0 +1,4 @@
+OPENAI_API_KEY=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
+OPENAI_API_BASE=https://api.groq.com/openai/v1
+AMADEUS_CLIENT_ID=your-amadeus-id
+AMADEUS_CLIENT_SECRET=your-amadeus-secret
